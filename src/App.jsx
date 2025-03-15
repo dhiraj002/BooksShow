@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NavBar from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 // import "index.css";
 
 const App = () => {
@@ -9,9 +10,10 @@ const App = () => {
     return (
         <>
             <div className="min-h-screen bg-gray-900">
-                <NavBar hansleSearch={(term) => setSearchQuery(term)} />
+                <NavBar handleSearch={(term) => setSearchQuery(term)} />
                 <Banner />
                 <Hero searchQuery={searchQuery} />
+                <Footer />
             </div>
         </>
     );

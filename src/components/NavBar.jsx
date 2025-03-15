@@ -3,12 +3,12 @@ import { BookOpenIcon } from "@heroicons/react/24/outline";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import FloatingPartical from "./FloatingPartical";
 
-const NavBar = () => {
+const NavBar = ({ handleSearch }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [serchText, SetSearchText] = useState("");
     function handleSubmit(e) {
         e.preventDefault();
-        // handleSearch(serchText);
+        handleSearch(serchText);
     }
 
     //dynamic Effect
