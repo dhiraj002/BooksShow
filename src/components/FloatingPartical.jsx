@@ -13,7 +13,8 @@ const FloatingPartical = () => {
                             height: `${Math.random() * 3 + 1}px`,
                             top: `${Math.random() * 100}%`,
                             left: `${Math.random() * 100}%`,
-                            animation: `float ${Math.random() * 10 + 5}s infinite normal none running float`,
+                            animation: `float ${Math.random() * 10 + 5}s infinite `,
+                            // animation: "float 5s infinite",
                         }}
                     ></div>
                 );

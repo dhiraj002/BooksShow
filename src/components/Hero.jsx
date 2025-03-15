@@ -46,8 +46,6 @@ const Hero = ({ searchQuery }) => {
                 }
 
                 setBooks(limitedBooks);
-
-                console.log(data);
             } catch (error) {
                 console.log("Erroe Fetching books", error);
                 const dummyBooks = Array.from({ length: 35 }, (_, i) => ({
